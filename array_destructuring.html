@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Array Destructuring</p>
+    <button onclick="over()">Show</button>
+    <br>
+    <br>
+    <button onclick="greet()">Show Greet</button>
+    <br>
+    <br>
+    <button onclick="Take()">Show Take</button>
+    <br>
+    <br>
+    <button onclick="myColor()">Show Take</button>
+    <br>
+    <br>
+    <script>
+        function over(){
+            let arr = ["Welcome", "to", "Cyber", "Success"];
+            let [first, second, , third]=arr;
+            document.write(third);
+        }
+
+        function greet(){
+            let arr = [10, 20, 30, 40, 500];
+            let[first, , ,fourth, fifth]=arr;
+            document.write(fourth);
+        }
+
+        function Take(){
+            let arr = [11.5, 22.5, 33.5, 44.5, 55.5];
+            let[first, ,Third, sixth]=arr;
+            document.write(sixth);
+        }
+
+        function myColor(){
+            let colors = ["pink", "Yellow", "Green", "Black","White","Red", "Blue","Purple","Orange"];
+            let[pink, yellow,...color]=colors;
+            document.write(pink+"<br>");
+            document.write(yellow+"<br>");
+            document.write(color+"<br>");
+        }
+    </script>
+</body>
+</html>
