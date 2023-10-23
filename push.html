@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push</title>
+    <style>
+        div p {
+            background-color: red;
+        }
+    </style>
+</head>
+<input type="button" value="Click ME" onclick="greet()">
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur. </p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <script>
+        function greet() {
+            let color = ['red', 'green'];
+            let mycolor = [...color];
+            mycolor.push('yellow');
+            document.write(mycolor + "<br>");
+            document.write(color + "<br>");
+
+            let str1 = ['A', ...'EIOU', 'B'];
+            document.write(str1);
+        }
+    </script>
+</body>
+
+</html>

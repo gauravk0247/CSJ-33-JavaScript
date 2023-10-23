@@ -1,0 +1,31 @@
+<html>
+<head>`
+    <title>AddEventListner</title>
+</head>
+<body>
+    <h1>My Assignment</h1>
+    <textarea name="mytext" id="mytext" cols="30" rows="10"></textarea>
+    <br>
+    <button id="clickme" onclick="fun()">clickme</button>
+    <br>
+    <script>
+        function fun(){
+           var str1 = document.getElementById("mytext").value;
+           var count=0;
+           var con = 0;
+           var str = str1.toLowerCase();
+            for(var i=0;i<str.length;i++){
+                if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u'){
+                    count++;
+                }
+                else{
+                    con++;
+                }
+            }
+            document.write("Vowels = "+count);
+            document.write("<br>");
+            document.write("Consonents = "+con);
+        }
+    </script>
+</body>
+</html>

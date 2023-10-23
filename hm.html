@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Prime and Palindrome</title>
+    <style>
+        .btn{
+            background-color: orangered;
+            color: white;
+            border: 2px solid orangered;
+            border-radius: 12px;
+            padding: 6px 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn:Hover{
+            background-color: white;
+            border: 2px solid orangered;
+            color: orangered;
+            transition: all;
+            font-size: large;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <script>
+    function palindrome(start, end) {
+      var num=start;
+      var range=end;
+        rev = 0;
+        for(var i=num;i<=range;i++){
+      var str = i.toString();
+      rev = str.split("").reverse().join("");
+      if (rev == str) {
+        document.write(i+" ");
+      }
+    }
+}
+
+    function prime() {
+      var a = 10;
+      var range = 1000;
+      var count = 0;
+      for (var i = a; i <= range; i++) {
+        var c = 0;
+        for (var j = 1; j <= i; j++) {
+          if (i % j == 0) {
+            c++;
+          }
+        }
+
+        if (c == 2) {
+        document.write(i+" ");
+      }
+    }
+    }
+
+    function fibonacci(){
+        var a=0, b=1, c=0;
+        for(var i=0;i<=10;i++){
+            c=a+b;
+            document.write(a+" ");
+            a=b;
+            b=c;
+        }
+    }
+  </script>
+  <body>
+    <input class="btn" type="button" onclick="prime()" value="prime" />
+    <br />
+    <br />
+    <input class="btn" type="button" onclick="palindrome(1, 1000)" value="palindrome" />
+    <br>
+    <br>
+    <input class="btn" type="button" onclick="fibonacci()" value="fibonacci" />
+  </body>
+</html>

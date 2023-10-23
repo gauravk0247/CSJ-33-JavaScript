@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Objects in javascript</title>
+</head>
+
+<body>
+    <h2>Defining method in javascript Object</h2>
+    <script>
+        function emp(id, name, salary) {
+            this.id = id;
+            this.salary = salary;
+            this.name = name; 
+
+            this.changeSalary=changeSalary;
+            function changeSalary(otherSalary){
+                this.salary=otherSalary;
+            }
+        }
+        e = new emp(100, "Gaurav", 50000);
+        document.write(e.id+" "+e.name+" "+e.salary+" ");
+        e.changeSalary(80000);
+        document.write("<br>"+e.id+" "+e.name+" "+e.salary+" ");
+    </script>
+</body>
+
+</html>

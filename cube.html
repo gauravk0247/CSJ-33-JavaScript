@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Welcome js</title>
+    </head>
+    <body>
+        <script>
+            function cube(){
+                var number = document.getElementById("number").value;
+                number=number*number*number;
+                alert("Cube is "+number);
+            }
+        </script>
+        <form action="" name="form">
+            Enter Number : <input type="text" name="number" id="number">
+            <input type="button" value="cube" onclick="cube()">
+        </form>
+    </body>
+</html>

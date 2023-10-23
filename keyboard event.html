@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Keyboard Event</title>
+    <style>
+      ul {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 4px 8px;
+      }
+      a {
+        background: orangered;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 11px;
+      }
+      a:hover {
+        color: orangered;
+        background: white;
+        border: 2px solid orangered;
+      }
+      form input{
+        font-size: 1rem;
+      }
+      #btn{
+        background-color: green;
+        color: white;
+        padding: 2px 6px;
+      }
+    </style>
+    <script>
+      function mouseover() {
+        document.write("Enter Your Name");
+      }
+      function onfocus2() {
+        document.getElementById("focus1").style.background = "purple";
+      }
+      function onlick() {
+        document.write("Submit Details!!!");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <form action=""><label for="">Name : </label>
+          <input type="text" id="focus" onmouseover="mouseover()" v/>
+          <br /><br />
+          <label for="">Email : </label>
+          <input type="email" id="focus1" onfocus="onfocus2()" />
+          <br>
+          <br>
+          <input type="button" value="Submit" onclick="onlick()" id="btn">
+        </form>
+      </main>
+      <footer>&copy; Copyright all rights reserved | privacy policy</footer>
+    </header>
+  </body>
+</html>

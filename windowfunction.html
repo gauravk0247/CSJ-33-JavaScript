@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Window Function</title>
+</head>
+
+<body>
+    <label for="">Click me to go for google : </label>
+    <input type="button" value="Click ME" onclick="windowOpen()">
+    <br>
+    <br>
+    <hr>
+    <label for="">Click me to go on netflix</label>
+    <input type="button" onclick="greet()" value="Click Me">
+    <br>
+    <br>
+    <hr>
+    <label for="">Close </label>
+    <input type="button" value="Click Me" onclick="closeMe">
+    <br><br>
+    <hr>
+    <label for="">Print The Page</label>
+    <button onclick="printPage()">Click Me</button>
+    <hr>
+    <button onclick="mytimer=setInterval(myCounter, 10)">Start counter1</button>
+    <p id="demo">Click on the button above and i will count forever</p>
+    <button onclick="clearInterval(mytimer)">Stop Counter</button>
+    <script>
+        function windowOpen() {
+            window.open("https://www.google.com");
+        }
+        var mywindow;
+        function greet() {
+            // window.open("https://www.netflix.com/in/" ,"_blank","toolbar","location=yes", "directories=no", "status=no", "menubar=yes", "scrollbars=yes", "resizable=no", "copyhistory=yes", "width=400", "height=400");
+
+            mywindow = window.open("https://www.netflix.com/in/", "_blank", "toolbar=yes", "location=yes", "directories=no", "status=no", "menubar=yes", "scrollbars=yes", "resizable=no"
+                , "copyhistory=yes", "width=40", "height = 40");
+        }
+
+        function closeMe() {
+            window.close();
+        }
+
+        function printPage() {
+            window.print();
+        }
+        var c = 0;
+        function myCounter(){
+            document.getElementById("demo").innerHTML=++c;
+        }
+    </script>
+</body>
+
+</html>

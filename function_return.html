@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Function return</title>
+        <script>
+            function display(){
+                var result = info('Gaurav', 'Khairnar');
+                document.write(result);
+                alert("Welcome "+result);
+            }
+            function info(first, last){
+                var full = first+" "+last;
+                return full;
+            }
+       
+        </script>
+    </head>
+    <body>
+        <br>
+        <input type="button" value="Submit" onclick="display()">
+    </body>
+</html>

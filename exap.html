@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="AS">
+     <button onclick="display()">Click Me</button>
+    
+     <script>
+        function display() {
+            var n= document.getElementById("AS").value;
+
+            var sq=n*n;
+
+            var s=sq.toString();
+            var d=s.length/2;
+            var s1="";
+            var s2="";
+            for(var i=0;i<s.length;i++){
+             s1=s.substring(d)
+            s2=s.substring(0,d);
+            }
+            var n1=new Number(s1);
+            var n2=new Number(s2);
+
+            var n3=n1+n2;
+            document.write(n3);
+            document.write("<br>")
+
+          if(n==n3){
+            document.write("number is kapricant number")
+          }
+          else{
+            document.write("number is not kapricant number")
+          }
+
+            
+        }
+     </script>
+</body>
+</html>

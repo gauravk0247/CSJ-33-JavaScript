@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Vowels Count</title>
+    </head>
+    <body>
+        <input type="text" id="mytext">
+        <button onclick="myFun()">Click ME</button>
+    </body>
+    <!-- Palindrome String Using String Methods -->
+    <script>
+        function myFun(){
+            var str = document.getElementById("mytext").value;
+            var str1 = str.split("").reverse().join("");
+            if(str1==str){
+                document.write("It is a Palindrome String.");
+            }
+            else{
+                document.write("It is not Palindrome.");
+            }
+        }
+    </script>
+</html>

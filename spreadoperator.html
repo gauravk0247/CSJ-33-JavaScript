@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <p>Bring your mouse inside the division to see the result: </p>
+    <input type="button" value="click me" onclick="over()">
+    <script>
+        function over(){
+            let arr = ['Red', 'Yellow'];
+            let arrColor = ['Blue', 'Brown', 'Green', ...arr]
+            let arr11 = ['j','a','v','a', ...arrColor, ...arr]
+            document.write(arr11);
+        }
+    </script>
+</body>
+</html>
