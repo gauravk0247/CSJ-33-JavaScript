@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array Destructuring</title>
 </head>
 <body>
     <p>Array Destructuring</p>
@@ -16,7 +16,13 @@
     <button onclick="Take()">Show Take</button>
     <br>
     <br>
-    <button onclick="myColor()">Show Take</button>
+    <button onclick="myColor()">Show myColor</button>
+    <br>
+    <br>
+    <button onclick="myFun1()">Show myFun1</button>
+    <br>
+    <br>
+    <button onclick="myFun2()">Show myFun2</button>
     <br>
     <br>
     <script>
@@ -44,6 +50,20 @@
             document.write(pink+"<br>");
             document.write(yellow+"<br>");
             document.write(color+"<br>");
+        }
+
+        function myFun1(){
+            let x, y;
+            [x=100, y=200]=[500];
+            document.write("x = "+x+"<br>");
+            document.write("y = "+y+"<br>");
+        }
+
+        function myFun2(){
+            let x=50, y=100;
+            [x,y]=[y,x];
+            document.write("x = "+x+"<br>");
+            document.write("y = "+y+"<br>");
         }
     </script>
 </body>
