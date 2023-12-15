@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript CallBack Functions</title>
+</head>
+<body>
+    <h1>Javascript CallBack</h1>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="hello"></h1>
+    
+    <script>
+        setTimeout(myFunction, 1000);
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML="Welcome All!!";
+        }
+
+        setTimeout(function() {myFunction1("to journey with!");}, 2000);
+        function myFunction1(value){
+            document.getElementById("demo1").innerHTML=value;
+        }
+
+        let myPromise = new Promise(function(myResolve, myReject){
+            setTimeout(function() {myResolve("Cyber Success"); myReject("Sorry");}, 3000);
+        });
+
+        myPromise.then(function(value){
+            document.getElementById("hello").innerHTML=value;
+        })
+    </script>
+</body>
+</html>

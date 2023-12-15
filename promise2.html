@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Promise</title>
+</head>
+<body>
+    <h1>Javascript Promise</h1>
+    <script>
+        // Creating a promise
+    const myPromise = new Promise((resolve, reject)=>{
+        // Simulating an asynchronous operation
+        setTimeout(()=>{
+        const randomNumber = Math.random();
+
+        if(randomNumber > 0.5){
+            // Reject the promise if the condition is not met
+            resolve(randomNumber);
+        }
+        else{
+            reject("The random number is too low!");
+        }
+    }, 1000); // Simulating a delay of 1 second
+    });
+
+    myPromise.then((result) =>{
+        document.write("Promise fulfilled with result: ", result);
+    })
+    .catch((error)=>{
+        document.write("Promise rejected with error ", error);
+    })
+</script>
+</body>
+</html>
