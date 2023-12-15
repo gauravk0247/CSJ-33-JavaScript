@@ -10,7 +10,9 @@
     <h1 id="demo"></h1>
     <h1 id="demo1"></h1>
     <h1 id="hello"></h1>
-    <h2 id="yes"></h2>
+    <h4 id="yes"></h4>
+    <h5 id="code"></h5>
+    <h5 id="coder"></h5>
     
     <script>
         setTimeout(myFunction, 1000);
@@ -40,7 +42,25 @@
         async function myFun(){ return "Async Keyword";}
 
         myFun().then(
-            function(value) {info(value);});
+            function(value) {info(value);}
+            );
+
+        async function myDisplay(){
+            let myPromise = new Promise(function(resolve, reject){
+                resolve("async with await!!");
+            });
+            document.getElementById("code").innerHTML = await myPromise;
+        }
+        myDisplay();
+
+        // async and await timeout
+        async function mySuccess(){
+            let myPromise = new Promise(function(resolve){
+                setTimeout(function() {resolve("Time out with async and await");}, 5000);
+            });
+            document.getElementById("coder").innerHTML = await myPromise;
+        }
+        mySuccess();
     </script>
 </body>
 </html>
