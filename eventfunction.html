@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function</title>
+    <script>
+        function greeting() {
+            var xyz = Math.random();
+            document.writeln(xyz + "<br>");
+
+            var abc = 3425.76;
+            document.writeln(Math.floor(abc) + "<br>");
+
+            var ef = 3456.76;
+            document.writeln(Math.round(ef) + "<br>");
+
+            var cd = 3456.76;
+            document.writeln(Math.ceil(cd) + "<br>");
+
+            document.writeln(Math.pow(2, 10) + "<br>");
+
+            var sqrtResult = Math.sqrt(25); // Fix the arguments for sqrt
+            document.writeln(sqrtResult + "<br>");
+
+            document.writeln(Math.cbrt(125) + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <input type="button" value="Submit" onclick="greeting()">
+</body>
+
+</html>
