@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myform{
+           padding: 12px 23px;
+        }
+        form{
+            border: 2px solid red;
+            width: 400px;
+            box-shadow: 20 23px 44px red;
+        }
+        div, .main{
+            padding: 12px;
+            font-size: 16px;
+        }
+        label{
+            /* width: 12px 23px; */
+            padding: 12px 23px;
+        }[placeholder],input{
+            font-size: 16px;
+            padding: 5px 3px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn input{
+            background-color: green;
+            border-radius: 6px;
+            border-color: green;
+            color: white;
+            padding: 6px 7px;
+        }
+        .btn input:hover{
+            background-color: white;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="myfrom">
+        <form action="">
+            <div class="main">
+            <div>
+                <label for="">Name :</label>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <label for="">Email :</label>
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="btn">
+                <input type="button" value="LogIn">
+            </div>
+        </div>
+        </form>
+    </div>
+    <script>
+        // function gaurav(){
+        //     prompt("Good Morning");
+        // }
+        // gaurav();
+
+        // const func = (a, b, c)=>{
+        //     return a+b+c;
+        // }
+        // let f = func(1,2,3);
+        // console.log(f)
+
+
+        // let [a,b, rest] = [12, 23, 34, 67, 89];
+        // console.log(a, b, ...rest);
+
+        function myFun(a, b, c){
+            return a+b+c;
+        }
+        let arr = [12, 12, 12];
+        let result = myFun(arr[0]+arr[1]+arr[2]);
+        console.log(result);
+        console.log(myFun(...arr));
+
+
+        let a = "Gaurav";
+        console.log(a.toUpperCase())
+
+        let cc = "GAURAV";
+        console.log(cc.toLocaleLowerCase())
+
+        let arr1 = [12, 23, 45];
+        let arr2 = [1, 2, 3];
+        arr1.reverse();
+        console.log(arr1+arr2);
+        console.log(arr2.concat(arr1));
+        console.log(arr1.join(arr2));
+
+        async function sleep(){
+            return new Promise ((resolve , reject)=>{
+                setTimeout(() => {
+                    resolve(56)
+                }, 1000);
+            })
+        }
+
+        (async function main(){
+            let a = await sleep();
+            console.log(a)
+        })
+    </script>
+</body>
+</html>
