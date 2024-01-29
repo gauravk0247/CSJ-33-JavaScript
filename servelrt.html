@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Your CSS file or style block */
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.serv {
+  position: relative;
+  width: 300px;
+  height: 200px; /* Set the height as needed */
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.serv:hover {
+  transform: scale(1.1);
+}
+
+.conta img {
+  width: 100%;
+  height: auto;
+}
+
+.capsule {
+  background-color: #61dafb;
+  padding: 10px;
+  text-align: center;
+}
+
+.capsule span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.content {
+  padding: 15px;
+  text-align: justify;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.serv:hover .content {
+  opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+    <div className="cart">
+        <div className="serv">
+            <div className="conta">
+                <img src="./Img/wd.png" alt="" />
+            </div>
+            <div className="capsule">
+                <span>Web Development</span>
+            </div>
+            <div className="content">
+                We carry more than just good coding skills. Our experience makes us stand out from other web
+                development.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
