@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pp{
+            color: red;
+        }
+    </style>
+</head>
+<p id="para" class="pp">Nice One</p>
+<p id="pa" class="pp">Second One</p>
+<button id="para">Click ME</button>
+<body>
+    <script>
+    
+    let aa = document.getElementById("para").getAttribute("style");
+    document.getElementById("pa").innerHTML=aa;
+    </script>
+</body>
+</html>
