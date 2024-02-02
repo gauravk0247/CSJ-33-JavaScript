@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+
+        // map 
+        let arr = [12, 34, 56, 78];
+        let a = arr.map((a, aa)=>{
+            return a+aa
+        })
+        console.log(a)
+
+        // filter
+        let num = [12, 45, 67, 9];
+        let fil = num.filter((p)=>{
+            return p>10
+        })
+        console.log(fil);
+
+        // reduce
+        // let para = [1, 3, 5, 7];
+        // para.reduce((m, m)=>{
+        //     return m+m;
+        // })
+        // console.log(red);
+
+        // for ... of
+        let y = [1, 2, 3, 4,];
+        for(let item of y){
+            console.log(y);
+        }
+
+        // for ... in
+        let g = [3, 5, 7, 9];
+        for(let v in g){
+            console.log(g);
+        }
+
+        // forEach
+        let nn = [12, 67, 2 , 56];
+        num.forEach((elment)=>{
+            console.log(elment + elment)
+        })
+
+    </script>
+</body>
+</html>
