@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await</title>
+</head>
+<body>
+    <script>
+        async function mydata(){
+            return new Promise((resolve, reject)=>{
+                setInterval(() => {
+                    resolve(456);
+                }, 3000);
+            })
+        }
+        async function main(){
+            console.log("hii");
+            let data = await mydata();
+            console.log(data);
+            console.log("after");
+        }
+        main();
+    </script>
+</body>
+</html>
