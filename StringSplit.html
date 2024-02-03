@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       
+    </style>
 </head>
 <body>
-    <p id="para"></p>
-    <button id="btn" onclick="showMsg()">Press Me</button>
-    <script>
-        function showMsg(){
-            document.getElementById("para").innerHTML="Welcome To Coadiation";
-        }
-    </script>
+    <p id="para" class="pa">My Para</p>
+    <button id="btn" onclick="display()">Click me</button>
+   <script>
+  function display(){
+    document.getElementById("btn").addEventListener("dblclick", function(){
+        document.write("Double click event");
+    })
+  }
+   </script>
 </body>
 </html>
