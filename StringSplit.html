@@ -10,13 +10,59 @@
 </head>
 <body>
     <p id="para" class="pa">My Para</p>
-    <button id="btn" onclick="display()">Click me</button>
-   <script>
-  function display(){
-    document.getElementById("btn").addEventListener("dblclick", function(){
-        document.write("Double click event");
-    })
-  }
-   </script>
+  <p>My para</p>
+  <button id="btn">CLick Me</button>
+
+  <script>
+   let arr = [12, 3, 45, ,67, 8];
+//    arr.map((a)=>{
+//         document.write(a)
+//    })
+
+   let fil = arr.filter((a)=>{
+    return a> 10;
+   })
+//    document.write(fil)
+
+   let red = arr.reduce((a1, a2)=>{
+    return a1+a2;
+   })
+//    document.write(red)
+
+
+//    let name = ["Apple", "Mango", "Chiku"];
+//    for(let i in arr){
+//     document.write(i);
+//    }
+
+   let num = [1, 4, 7, 11, 34];
+   for(let i of num){
+    // document.write(i, " ");
+   }
+
+
+   num.forEach((Element)=>{
+    // document.write(Element, " ")
+   })
+
+   num.map((a)=>{
+    // document.write(a, " ")
+   })
+
+
+   let cond = num.filter((a)=>{
+    return a> 10
+   })
+//    document.write(cond);
+
+   let add = num.reduce((v, g)=>{
+    return v+g;
+   })
+//    document.write(add)
+
+
+   let [a, b , ...rest]= [12, 34, 23,45, 23, 56, 78]
+   document.write(a, b,rest);
+  </script>
 </body>
 </html>
