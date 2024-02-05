@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let [a, b, ...rest] = [1, 2, 5, 6, 7]
+        // console.log(a, b, rest)
+
+
+        let arr = [12, 34, 56, 90];
+        let obj = { ...arr }
+
+
+        function sum(a, b, c) {
+            return a + b + c;
+        }
+        // console.log(sum(...arr))
+        // console.log(obj)
+
+
+        let num = [1, 5, 8, 12, 45];
+        num.map((aa) => {
+            // console.log(aa)
+        })
+
+
+        let red = [12, 4, 2, 8, 10];
+        let res = red.filter((h1) => {
+            return h1 > 10;
+        })
+        console.log(res)
+
+
+
+        let number = [1, 56, 12, 90, 10];
+        let gg = number.reduce((h1, h2) => {
+            return h1 + h2;
+        })
+        console.log(gg)
+
+        let la = 56;
+        la = 96;
+        console.log(la)
+
+        var tt = 89;
+        var tt = 90;
+        console.log(tt);
+
+        const ct = 456;
+        // console.log(ct)
+
+
+       async function fetchData() {
+            return new Promise((resolve, reject) => {
+                setInterval(() => {
+                    resolve(56);
+                }, 3000)
+            })
+        }
+        async function main() {
+            let prm = await fetchData();
+            console.log(prm);
+            console.log("hii")
+            console.log("Heloo")
+        }
+        main();
+    </script>
+</body>
+
+</html>
