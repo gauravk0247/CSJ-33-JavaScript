@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hii</p>
+    <script>
+     function greet(name , callback){
+        console.log("Name is " + name);
+        callback();
+     }
+     function callme(){
+        console.log("Call me function");
+     }
+     greet("Gaurav", callme)
+
+     let a = "Gaurav good afternoon";
+     let aa = a.split(" ", 3);
+
+     let rev = "Gaurav";
+     console.log(aa)
+    </script>
+</body>
+</html>
