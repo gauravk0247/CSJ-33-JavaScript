@@ -1,19 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
 </head>
-<body>
-    <script>
-        try{
-            let a = 45;
-            console.log(a);
-            console.log(b)
-        }catch(e){
-            console.log("Not Prsent")
-        }
-    </script>
-</body>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 140px;
+    }
+
+    form {
+        background-color: purple;
+        padding: 22px;
+        margin: 12px;
+        border-radius: 23px;
+        font-size: 23px;
+    }
+
+    label {
+        color: white;
+        font-size: 23px;
+    }
+
+    input {
+        padding: 5px;
+        width: 223px;
+        margin: 5px;
+    }
+
+    #btn {
+        background-color: green;
+        border-color: green;
+        padding: 5px 8px;
+        color: white;
+        margin-top: 7px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    #btn:hover{
+        background-color: white;
+        border-color: green;
+        color: green;
+    }
+
+    
+</style>
+<center>
+
+    <body>
+        <h3>
+            <font color='blue'>Today Date is : <%=new Date() %>
+            </font>
+        </h3>
+        <form action="UserReg.jsp" method="post">
+            <label for='Name'>User Name</label>
+            <input type="text" name="t1"><br>
+            <label for='password'>User Password</label>
+            <input type='text' name="t2" patter='[0-9A-Z#$@]{3,6}' required><br>
+            <label for='phone'>User Phone</label>
+            <input type="text" name="t3" required><br>
+            <input type='submit' value='signup' id="btn">
+        </form>
+    </body>
+</center>
+
 </html>

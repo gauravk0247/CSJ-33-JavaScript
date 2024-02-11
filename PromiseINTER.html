@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function myFun(){
+            return new Promise((resolve, reject)=>{
+                setInterval(()=>{
+                    resolve(455);
+                }, 3000);
+            })
+        }
+        async function main(){
+            let f = await myFun();
+            console.log(f);
+            console.log("Gaurav");
+            console.log("Khairnar");
+        }
+        main();
+    </script>
+</body>
+</html>
