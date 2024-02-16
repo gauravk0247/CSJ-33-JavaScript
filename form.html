@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 220px;
+        }
+        form{
+            width: 550px;
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 23px;
+        }
+        .first{
+            padding: 7px;
+        }
+        .first input{
+            padding: 5px;
+            font-size: 15px;
+            border: none;
+            border-radius: 12px;
+            text-align: center;
+            width: 250px;
+        }
+        #btn{
+            background-color: green;
+            color: white;
+            padding: 5px 12px;
+            font-size: 15px;
+            border-radius: 4px;
+            border-color: green;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: white;
+            border-color: green;
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -15,7 +56,18 @@
             <label for="">Enter Your Last Name : </label>
             <input type="text" placeholder="Enter Your Last Name">
         </div>
-        <button>Submit</button>
+        <div class="first">
+            <label for="">Enter Your Date Of Birth : </label>
+            <input type="date" placeholder="Enter Your Last Name">
+        </div>
+        <div class="first">
+            <label for="">Enter Your Date Of Birth : </label>
+            <input type="checkbox" placeholder="Enter Your Last Name">
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <button id="btn">Submit</button>
+        </div>
     </form>
 </body>
 </html>
