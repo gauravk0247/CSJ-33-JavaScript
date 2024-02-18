@@ -7,13 +7,16 @@
 </head>
 <body>
     <P id="para"></P>
-    <button>Click ME</button>
+    <button id="btn">Click ME</button>
     <script>
         let a= 45;
         let b = 55;
         console.log(a+b)
         console.log(a);
         document.getElementById("para").innerHTML = "This is my paragraph";
+        document.getElementById("btn").addEventListener("dblclick", ()=>{
+            alert("You Performed double click event")
+        })
     </script>
 </body>
 </html>
