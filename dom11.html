@@ -61,13 +61,17 @@
             <label for="">Enter Your Password : </label>
             <input type="text" name="t1" placeholder="Enter Your Name">
         </div>
-        <button id="btn">LogIn</button>
+        <button id="btn" onclick="myFun()">LogIn</button>
     </form>
     <script>
         document.getElementById("btn").innerHTML = "Click Here";
         document.getElementById("btn").addEventListener("click", ()=>{
             alert("You Successfully Submited the data")
         })
+
+        function myFun(){
+            document.write("You performed function in js");
+        }
     </script>
 </body>
 </html>
