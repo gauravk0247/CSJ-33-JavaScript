@@ -53,13 +53,13 @@
 </head>
 <body>
     <form action="">
-        <div class="first">
+        <!-- <div class="first">
             <label for="">Enter Your UserName : </label>
             <input type="text" name="t1" placeholder="Enter Your Name">
         </div>
         <div class="first">
             <label for="">Enter Your Password : </label>
-            <input type="text" name="t1" placeholder="Enter Your Name">
+            <input type="text" name="t1" placeholder="Enter Your Name"> -->
         </div>
         <button id="btn" onclick="myFun()">LogIn</button>
     </form>
@@ -72,6 +72,58 @@
         function myFun(){
             document.write("You performed function in js");
         }
+
+
+        let arr = [12, 34, 56, 78];
+        let rev = arr.reverse();
+        console.log(rev)
+
+
+        // arr.filter((a)=>{
+        //     console.log(a>30);
+        // })
+
+        // arr.map((b, a)=>{
+        //     console.log(b+a)
+        // })
+
+        arr.reduce((a, b)=>{
+            console.log(a, b)
+        })
+
+        let rest = [12, 45, 67, 89, 90];
+        console.log(...rest)
+
+        let sp = [12, 45, 67, 78];
+        console.log({...sp})
+
+
+        let num = [12, 45, 67, 78, 89];
+        console.log(num)
+
+        let red= num.reduce((a, b)=>{
+            return a+b;
+        })
+        console.log(red)
+
+        let fil = num.filter((a)=>{
+            return a>50;
+        })
+        console.log(fil)
+        
+
+        let mp = num.map((i, a, c)=>{
+            return i, a, c;
+        })
+        console.log(mp)
+
+
+        let fr = ["Apple", "Mango", "Chiku", "Annar", "Grapes"];
+        // console.log(fr);
+
+        fr.forEach(()=>{
+            console.log(fr)
+        })
     </script>
 </body>
 </html>
