@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  [a, b, ...rest] = [12, 45, 67, 45, 56, 78];
+        // console.log(a, b, rest);
+
+
+        let arr = [12, 34, 56]
+        let obj1 = {...arr}
+        // console.log(obj1)
+
+        function sum(v1, v2, v3){
+            return v1+v2+v3;
+        }
+        // console.log(sum(...arr))
+
+       async function  muFun(){
+        return new Promise((resolve,reject)=>{
+            setInterval(()=>[
+                resolve(45)
+            ], 2000)
+        })
+    }
+        async function main(){
+            var fa = await muFun();
+            // console.log(fa)
+            // console.log("heoll")
+        }
+        main()
+
+        function nEw(){
+            var a = 645;
+            function inner(){
+                // console.log(a)
+            }
+            inner()
+        }
+        nEw()
+
+        function outer(){
+            var t = 678;
+            function inner(){
+                return t
+            }
+            return inner()
+        }
+        let ot = outer()
+        // console.log(ot)
+
+        function add(a, b, CallBack){
+            const result = a + b;
+            CallBack(result)
+        }
+        function logResult(result){
+            // console.log("Result is ", result)
+        }
+        // add(4, 5, logResult)
+
+        try{
+            let r = 12;
+            if(r==126)
+            document.write(r)
+        }catch(e){
+            console.log("not correct" + e.message)
+        }
+    </script>
+</body>
+</html>
