@@ -29,6 +29,17 @@
         num.forEach((n, n1)=>{
             console.log(n*n1)
         })
+
+       let p = new Promise((resolve , reject)=>{
+        setInterval(()=>{
+            resolve(56)
+        }, 4000)
+       })
+       p.then((resolve)=>{
+        console.log("Success");
+       }).catch((reject)=>{
+        console.log("reject")
+       })
     </script>
 </body>
 </html>
