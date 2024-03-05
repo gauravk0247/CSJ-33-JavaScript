@@ -26,10 +26,10 @@
 // const data = ((req, res) => {
 //     req.handl
 
-    function Data() {
-        const url = "";
-        let result = json fetch(url)
-    }
+    // function Data() {
+    //     const url = "";
+    //     let result = json fetch(url)
+    // }
 
 //     display: flex;
 //     justify -continue
@@ -56,3 +56,6 @@ function myFacto(n){
     }
 }
 console.log(myFacto(0))
+
+
+console.log("Hii")
