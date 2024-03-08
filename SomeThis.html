@@ -64,6 +64,27 @@
         }
         let aa = new A()
         aa.submit()
+
+
+        try{
+            let arr1 = [12, 34, 56];
+            console.log(arr1)
+            console.log(art)
+        }catch(error){
+            console.log(error.message)
+        }finally{
+            console.log("Finally block executed")
+        }
+
+
+        function tryFun(){
+            let a = 45;
+            function oneFun(){
+                console.log(a);
+            }
+            oneFun()
+        }
+        tryFun();
     </script>
 </body>
 </html>
