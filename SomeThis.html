@@ -9,9 +9,15 @@
     <script>
       async function myFun(){
         return new Promise((resolve, reject)=>{
-
+            setInterval(()=>{
+                resolve(65);
+            }, 3000)
         })
        }
+       myFun().then(()=>{
+        console.log("hii")
+       })
+      
     </script>
 </body>
 </html>
