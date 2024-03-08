@@ -14,10 +14,32 @@
             }, 3000)
         })
        }
-       myFun().then(()=>{
-        console.log("hii")
-       })
+    //    myFun().then(()=>{
+    //     console.log("hii")
+    //    })
+
+    async function main(){
+        let a = await myFun()
+        console.log(a)
+    }
+    main()
       
+
+    let arr = [1, 23, 45, 67, 89];
+    let ad = arr.filter((a)=>{
+        return a>40;
+    })
+    console.log(ad)
+
+    let red = arr.reduce((s1, s2)=>{
+        return s1*s2;
+    })
+    console.log(red)
+
+    let mp = arr.map((val, ind, arr)=>{
+        return val, ind, arr;
+    })
+    console.log(mp)
     </script>
 </body>
 </html>
