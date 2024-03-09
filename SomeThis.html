@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+
+
+    <h1 style='text-align: center;'>Hii This is my heading</h1>
+    <button id="btn">Click ME</button>
     <script>
       async function myFun(){
         return new Promise((resolve, reject)=>{
@@ -54,27 +58,27 @@
     //     body: json.stringyfy();
     // });
 
-        class A{
-            constructor(){
-                document.write("It is always executed when we create a object of a class")
-            }
-            submit(){
-                alert("Form Submited")
-            }
-        }
-        let aa = new A()
-        aa.submit()
+        // class A{
+        //     constructor(){
+        //         document.write("It is always executed when we create a object of a class")
+        //     }
+        //     submit(){
+        //         alert("Form Submited")
+        //     }
+        // }
+        // let aa = new A()
+        // aa.submit()
 
 
-        try{
-            let arr1 = [12, 34, 56];
-            console.log(arr1)
-            console.log(art)
-        }catch(error){
-            console.log(error.message)
-        }finally{
-            console.log("Finally block executed")
-        }
+        // try{
+        //     let arr1 = [12, 34, 56];
+        //     console.log(arr1)
+        //     console.log(art)
+        // }catch(error){
+        //     console.log(error.message)
+        // }finally{
+        //     console.log("Finally block executed")
+        // }
 
 
         function tryFun(){
@@ -85,6 +89,41 @@
             oneFun()
         }
         tryFun();
+
+        function Outer(){
+            let g = 5678;
+            function inner(){
+                return g
+            }
+            return inner()
+        }
+        let as = Outer()
+        console.log(as)
+
+        // let sort1 = ["Gaurav", "Arush", "Pratik", "Darshan"]
+
+        let sort2 = [1, 567 , 2, 34, 56, 78, 67]
+        let bn = sort2.sort((a, b)=>(b-a));
+        console.log(bn)
+
+        function giga(n){
+            if(n==0 || n== 1){
+                return 1;
+            }
+            else{
+                return n * giga(n-1)
+            }
+        }
+        let gg = giga(0)
+        console.log(`$The factorial of 0 is ${gg}`)
+
+        // document.getElementById('btn').addEventListener(('dbclick'), ()=>{
+        //     alert("Your Perform Click operation")
+        // })
+
+        document.getElementsByTagName("h1").innerHTML = "Hii Wou are you?";
+
+        
     </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ref(a, b, callback){
+            let result =  a + b;
+            callback(result)
+        }
+        function tera(result){
+            console.log("Result is "+ result)
+        }
+        ref(2, 3, tera)
+
+
+
+        let [v, g, ...rest] = [12, 34, 56, 45, 67, 78, 89];
+        console.log(v, g, rest);
+
+        let arr = [12, 34, 45];
+        function sum(v1, v2, v3){
+            return v1+v2+v3;
+        }
+       let obj = {...arr};
+       console.log(sum(...arr))
+    //    console.log(ab)
+    </script>
+</body>
+</html>
