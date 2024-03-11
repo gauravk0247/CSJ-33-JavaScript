@@ -23,6 +23,15 @@
         }
         let as = numberPrimse(5)
         console.log(as)
+
+        function sum(a, b, callback){
+            let result = a+b;
+            callback(result)
+        }
+        function another(result){
+            console.log(result)
+        }
+        sum(4, 5, another);
     </script>
 </body>
 </html>
