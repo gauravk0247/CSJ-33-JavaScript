@@ -11,6 +11,18 @@
         let arr = [12, 34, 678, 1, 2, 0];
         arr.sort((a,b)=>b-a);
         console.log(arr)
+
+
+        function numberPrimse(n){
+            if(n==0 || n ==1){
+                return 1;
+            }
+            else{
+                return n * numberPrimse(n-1);
+            }
+        }
+        let as = numberPrimse(5)
+        console.log(as)
     </script>
 </body>
 </html>
