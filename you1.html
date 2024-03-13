@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function outer(){
+            let a = 45;
+            function inner(){
+                return a;
+            }
+            return u=inner();
+        }
+        let ii = outer();
+        console.log(ii)
+    </script>
 </body>
 </html>
