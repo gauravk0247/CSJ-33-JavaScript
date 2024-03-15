@@ -47,7 +47,35 @@
             console.log("failed")
         })
 
-        
+        let num = [12, 4,6, 7, 8,];
+        let fil = num.filter((c)=>{
+            return c>10;
+        })
+        console.log(fil)
+
+        let red = num.reduce((a1, b1)=>{
+            return a1*b1;
+        })
+        console.log(red)
+
+        let mp = num.map((index, val, arr)=>{
+            return index, val, arr;
+        })
+        console.log(mp)
+
+        num.forEach((ind, val, arr)=>{
+            console.log(ind, val, arr)
+        })
+
+        let a = 45;
+        var b = "45";
+        console.log(a===b)
+
+        let r = 0;
+        do{
+            console.log(r)
+            r++;
+        }while(r<=5);
     </script>
 </body>
 </html>
