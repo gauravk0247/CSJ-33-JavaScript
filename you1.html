@@ -41,6 +41,21 @@
         let fruits = ["Mango", "Apple", "Grapes", "Chiku", "banana"];
         let ss = fruits.sort();
         console.log(ss)
+
+        let num = [12, 4, 0, 3, 1];
+        num.sort((a, b)=>(b-a));
+        console.log(num)
+
+        function fact(n){
+            if(n==0 || n== 1){
+                return 1;
+            }
+            else{
+                return n*fact(n-1);
+            }
+        }
+        let f = fact(5)
+        console.log(f)
     </script>
 </body>
 </html>
