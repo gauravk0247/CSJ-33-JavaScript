@@ -13,6 +13,41 @@
         } catch (error) {
             console.log("Error "+ error.message)
         }
+
+
+        let arr = [12, 2, 6, 3, 89];
+        let sot = arr.sort((a, b)=>a-b);
+        console.log(sot)
+
+        let str = ["Java", "React", "Next", "CSS", "Html"];
+        str.sort();
+        console.log(str)
+
+        let myobj = {"name":"Gaurav", "id": 56};
+        console.log(myobj)
+
+        function fun(){
+            let a = 67;
+            function fe(){
+                console.log(a)
+            }
+            return fe();
+        }
+        fun()
+
+
+        let p = new Promise((resolve, reject)=>{
+            setInterval(()=>{
+                resolve(67000);
+            }, [3000])
+        })
+        p.then(()=>{
+            console.log("Success")
+        }).catch(()=>{
+            console.log("failed")
+        })
+
+        
     </script>
 </body>
 </html>
