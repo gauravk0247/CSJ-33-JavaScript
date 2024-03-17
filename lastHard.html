@@ -16,7 +16,15 @@
         }
         console.log(myFun(5))
 
-        
+        function outer(){
+            let a = 67;
+            function inner(){
+                return a;
+            }
+            return inner();
+        }
+        let as = outer();
+        console.log(as)
     </script>
 </body>
 </html>
