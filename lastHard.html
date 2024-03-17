@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p{
+            color: red;
+            background-color: purple;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet sequi ipsa repellat quasi, iure veritatis aliquid minima praesentium, facilis cumque, dolorem magni.
+    </p>
+    <button id="btn">Click Me</button>
     <script>
         function myFun(n){
             if(n == 0 || n == 1){
@@ -25,6 +36,47 @@
         }
         let as = outer();
         console.log(as)
+
+        function lesa(){
+            let a = "Gaurav";
+            function mesa(){
+                console.log(a);
+            }
+            mesa();
+        }
+        lesa();
+
+        let a = null;
+        console.log(typeof(a))
+
+        let b;
+        console.log(b)
+
+        let bn = {
+            "id": 34,
+            "name": "Gaurav"
+        }
+        console.log(bn)
+
+        let o = new Object();
+        o={
+            "Track":12,
+            "Name":"Think"
+        }
+        console.log(o)
+
+        function taea(name, id ){
+            this.id = id;
+            this.name = name;
+        }
+        e = new taea("higa", 45);
+        console.log(e.name+" " + e.id)
+
+        document.getElementById("btn").addEventListener(('dblclick'), ()=>{
+            alert("Your perform event click")
+        })
+
+
     </script>
 </body>
 </html>
