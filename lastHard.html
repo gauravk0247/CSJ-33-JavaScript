@@ -80,7 +80,24 @@
         console.log(uu);
         document.getElementById("para").setAttribute("style", "color:green;");
 
+     function Very(a, b, callback){
+        let result = a + b;
+        callback(result)
+     }
+     function Biba(result){
+        console.log(result)
+     }
+     Very(3, 5, Biba);
 
+     let arr = [112, 45, 56, 67, 912];
+     arr.sort((a, b)=>(a+b));
+     console.log(arr)
+
+     let fr = ["Mango", "Banana", "Apple", "Graphes", "Chiku"];
+     fr.sort()
+     console.log(fr)
+
+     
     </script>
 </body>
 </html>
