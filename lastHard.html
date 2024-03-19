@@ -97,7 +97,52 @@
      fr.sort()
      console.log(fr)
 
-     
+     let ass = [23, 2,1,6, 7];
+     ass.sort((a, b)=>b-a);
+     console.log(ass)
+
+     let ggg = [12, 45, 56, 67, 8];
+     let mp = ggg.map((val, ind, arr)=>{
+        return(val, ind, arr)
+     })
+    //  console.log(mp)
+
+    // ggg.forEach((val, ind, arr)=>(
+    //     console.log(val, ind, arr)
+    //  ))
+    
+     let fil = ggg.filter((a)=>{
+        return a>60;
+     })
+     console.log(fil)
+
+    //  let red = ggg.reduce((a)=>{
+    //     return a*a*a;
+    //  })
+     //  console.log(red)
+
+
+    let p = new Promise((resolve, reject)=>{
+        setInterval(()=>{
+            resolve(45);
+        }, 2000)
+    }).then(()=>{
+        console.loh("Success")
+    }).catch(()=>{
+        console.log("Failed")
+    })
+
+     async function tikaa(){
+        return new Promise((resolve, reject)=>{
+            setInterval(() => {
+               console.log("success")
+            }, 3000);
+        })
+    }
+    async function main(){
+        let we = await tikaa();
+        console.log(we)
+    }
     </script>
 </body>
 </html>
